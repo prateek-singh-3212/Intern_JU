@@ -3,6 +3,7 @@ from flask import Flask, request
 from DB import *
 import os
 
+
 app = Flask(__name__)
 
 @app.route('/')
