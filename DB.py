@@ -13,7 +13,7 @@ def getCityList():
     client = MongoClient(url)
     db = client["Intern"]
     collection = db["Intern_Data"]
-    return json.dumps(collection.distinct('city'))
+    return collection.distinct('city')
 
 def getStatus(_id):
     client = MongoClient(url)
